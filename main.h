@@ -134,5 +134,6 @@ int _strlen(const char *str);
 int _cmpchars(char *str, const char *delim);
 char *_strtok(char *str, const char *delim);
 int _isdigit(const char *str);
+int _atoi(char *str);
 
 #endif

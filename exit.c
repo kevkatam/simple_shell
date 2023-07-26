@@ -11,7 +11,7 @@ int exit_shell(mystruct *data)
 
 	if (data->args[1] != NULL)
 	{
-		u = atoi(data->args[1]);
+		u = _atoi(data->args[1]);
 		is_digit = _isdigit(data->args[1]);
 		str_len = _strlen(data->args[1]);
 		big_no = u > (unsigned int) INT_MAX;

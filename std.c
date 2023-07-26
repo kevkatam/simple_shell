@@ -59,3 +59,33 @@ char *itoa(int n)
 		;
 	return (buffer);
 }
+/**
+ * _atoi - converts a string to an integer
+ * @str: input strin
+ * Return: integer
+ */
+int _atoi(char *str)
+{
+	unsigned int count = 0, s = 0, oi = 0, pn = 1, m = 1, i;
+
+	while (*(str + count) != '\0')
+	{
+		if (s > 0 && (*(str + count) < '0' || *(str + count) > '9'))
+			break;
+		if (*(str + count) == '-')
+			pn *= -1;
+		if ((*(str + count) >= '0') && (*(str + count) <= '9'))
+		{
+			if (s > 0)
+				m *= 10;
+			s++;
+		}
+		count++;
+	}
+	for (i = count - s; i < count; i++)
+	{
+		oi = oi + ((*(str + i) - 48) * m);
+		m /= 10;
+	}
+	return (oi * pn);
+}
