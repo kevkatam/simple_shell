@@ -135,5 +135,9 @@ int _cmpchars(char *str, const char *delim);
 char *_strtok(char *str, const char *delim);
 int _isdigit(const char *str);
 int _atoi(char *str);
+char *copyinfo(char *name, char *value);
+void set_env(char *name, char *value, mystruct *data);
+int _setenv(mystruct *data);
+int _unsetenv(mystruct *data);
 
 #endif

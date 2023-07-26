@@ -9,6 +9,8 @@ int (*get_builtin(char *cmd))(mystruct *)
 	builtin_t builtin[] = {
 		{ "env", _env },
 		{ "exit", exit_shell },
+		{ "setenv", _setenv },
+		{ "unsetenv", _unsetenv },
 		{ NULL, NULL }
 	};
 	int i;
