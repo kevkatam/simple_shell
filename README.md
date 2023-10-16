@@ -1,2 +1,5 @@
-Trying to build our own shell
-Author - Kevin Kipruto
+# Simple_shell
+Trying to build my own shell
+## Author
+Kevin Kipruto
+kevkatam@gmail.com
